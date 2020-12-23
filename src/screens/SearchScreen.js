@@ -4,6 +4,7 @@ import SearchBar from "../components/SearchBar";
 
 const SearchScreen = () => {
   const [term, setTerm] = useState("");
+  const [results, setResults] = useState([]);
 
   return (
     <View>
@@ -14,6 +15,7 @@ const SearchScreen = () => {
           console.log("term was submitted");
         }}
       />
+      <Text>We have found {results.length} results</Text>
     </View>
   );
 };

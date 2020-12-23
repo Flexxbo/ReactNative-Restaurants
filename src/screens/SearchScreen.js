@@ -9,7 +9,7 @@ const SearchScreen = () => {
   const [term, setTerm] = useState("");
   const [searchApi, results, errormsg] = useResults();
 
-  console.log(results);
+  //console.log(results);
 
   const filterResultsByPrice = (price) => {
     return results.filter((result) => {

@@ -19,6 +19,7 @@ const SearchScreen = () => {
 
   return (
     <View style={{ flex: 1 }}>
+      {/* Man könnte auch einfach <></> statt dem <View> nehmen */}
       <SearchBar
         term={term}
         onTermChange={(newTerm) => setTerm(newTerm)}
@@ -27,7 +28,6 @@ const SearchScreen = () => {
         }}
       />
       {errormsg ? <Text>{errormsg}</Text> : null}
-      <Text>We have found {results.length} restaurants.</Text>
       <ScrollView>
         <ResultsList results={filterResultsByPrice("€")} headerText='Günstig' />
         <ResultsList results={filterResultsByPrice("€€")} headerText='Mittel' />

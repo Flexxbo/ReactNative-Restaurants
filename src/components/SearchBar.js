@@ -16,22 +16,22 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
         onEndEditing={onTermSubmit}
       />
     </View>
-  );A
+  );
 };
 
 const styles = StyleSheet.create({
   backgroundStyle: {
-    backgroundColor: "#F0EEEE",
+    backgroundColor: "#F0E9EE",
     height: 50,
     borderRadius: 5,
     marginTop: 15,
-    marginHorizontal: 10,
+    marginHorizontal: 15,
     flexDirection: "row",
+    marginBottom: 10,
   },
 
   iconStyle: {
     fontSize: 40,
-    marginHorizontal: 15,
     alignSelf: "center",
   },
 
